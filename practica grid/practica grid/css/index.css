@@ -1,0 +1,170 @@
+
+/*quita los estilos a los enlaces*/
+a{
+  list-style-type: none;
+  text-decoration:none;
+  color:inherit;
+}
+
+
+
+
+/*le da bore solido negro de 3 px a la tabla y al contenido*/
+table,td{
+  border-width: 3px;
+  border-color: black;
+  border-style: solid;
+
+
+}
+
+
+/*ancho y altura para todas las imagenes*/
+img{
+  height: 490px;
+  width: 490px;
+}
+
+/*estilos para las calases de grid container como tamaño de pading el color del fondo generar 8 columnas y 10 filas del mismo tamaño usando grid ademas de una separacion entre las filas y columnas de 10 px*/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+  grid-gap: 10px;
+  background-color: red;
+  padding: 15px;
+}
+
+/*estilos para las calases de grid container que esta dentro de un div como el fondo un poco mas claro con 4 cifra del rgb, texto centrado, tamaño de letra de 40px */
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  padding: 50px ;
+  font-size: 40px;
+}
+
+
+
+/*genera grid coge desde la columna 1 a la 8 y dede la fila 1 hasta la 1*/
+.item1{
+  display: grid;
+  grid-column: 1 / span 8;
+  grid-row: 1/ span 1;
+
+
+}
+
+/*genera grid coge desde la columna 1 hasta la 8 y dede la fila 2 hasta la 3*/
+.item2{
+  display: grid;
+  grid-column: 1 / span 8;
+  grid-row: 2/ span 2;
+  grid-template-columns:auto auto auto auto;
+
+}
+
+/*clase pjose con margen de 50px */
+.pjose{
+  margin: 50px;
+}
+
+
+
+
+
+
+
+
+
+/*genera grid y coge dede la columna 1 hasta la 1 y dede la fila 4 hasta la 3*/
+.item3{
+  display: grid;
+  grid-column: 1 /  span 1;
+  grid-row: 4/  span 4;
+
+
+}
+/*genera grid coge dede la columna 2 hasta la 4 y dede la fila 4 hasta la 3 ademas de generar 3 columnas del mismo tamaño*/
+.item4{
+  display: grid;
+  grid-column: 2 / span 5;
+  grid-row: 4/ span 4;
+  grid-template-columns: auto auto auto ;
+
+
+}
+/*genera grid  coge desde la columna 7 hasta la 8 y dede la fila 4 hasta la 5*/
+.item5{
+  display: grid;
+  grid-column: 7 /  span 2;
+  grid-row: 4/  span 2;
+}
+
+/*genera grid coge dede la columna 7 hasta la 8 y dede la fila 6 hasta la 7*/
+.item6{
+  display: grid;
+  grid-column: 7 / span 2;
+  grid-row: 6/ span 2;
+}
+/*genera grid coge dede la columna 1 hasta la 2 y dede la fila 8 hasta la 9 ademas de centrar el contenido*/
+.item7{
+  display: grid;
+  grid-column: 1 / span 2;
+  grid-row: 8/ span 2;
+  justify-content: center;
+
+}
+/*genera grid coge dede la columna 3 hasta la 4 y dede la fila 8 hasta la 9 ademas de centrar el contenido*/
+
+.item8{
+  display: grid;
+  grid-column: 3 / span 2;
+  grid-row: 8/ span 2;
+  justify-content: center;
+
+}
+/*genera grid coge dede la columna 5 hasta la 6 y dede la fila 8 hasta la 9 ademas de centrar el contenido*/
+
+.item9{
+  display: grid;
+  grid-column: 5 / span 2;
+  grid-row: 8/ span 2;
+  justify-content: center;
+
+}
+
+/*genera grid coge dede la columna 7 hasta la 9 y dede la fila 8 hasta la 9 ademas de centrar el contenido*/
+
+.item10{
+  display: grid;
+  grid-column: 7 /  span 2;
+  grid-row: 8/  span 2;
+  justify-content: center;
+}
+
+
+
+
+/*footer*/
+
+/*la clase item11 genera grid y coje desde la columna 1 a la 8 y desde la columna 10 hasta la 10 y dentro de el genera 5 columnas una auto y las otras con los porcentajes*/
+.item11{
+  display: grid;
+  grid-column: 1 / span 8;
+  grid-row: 10/  span 1;
+  grid-template-columns: auto 33% 11% 11% 11%;
+
+}
+
+
+
+
+/*contacto*/
+
+/*las imagenes con cla calse imgcon tiene el alto y  ancho*/
+.imgcon{
+  height:100px;
+  width: 100px;
+
+
+}
